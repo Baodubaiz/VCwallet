@@ -1,0 +1,15 @@
+.ResetInput,
+.ResetButton {
+    all: unset;
+    background-color: #fff;
+}
+
+.ResetTagA {
+    all: unset;
+    color: #006EFF;
+    cursor: pointer;
+}
+
+.ResetTagA:hover {
+    opacity: 0.7;
+}

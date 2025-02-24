@@ -1,0 +1,33 @@
+.Nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80px;
+    height: 100vh;
+    background-color: #313A42;
+}
+
+.Nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Nav-item {
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.Nav-item:hover {
+    filter: brightness(2);
+}
+
+
+.Icon-setting {
+    margin: 16px;
+    transition: 0.3s ease;
+}
+
+.Icon-setting:hover {
+    filter: brightness(2);
+}

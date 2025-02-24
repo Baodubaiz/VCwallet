@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    transition: ALL 0.5S ease-in-out;
+}
+
+body {
+    font-family: Roboto Condensed;
+    display: flex;
+    height: 100vh;
+    background-color: #24292E;
+}
+
+// Login Form
+.LoginForm {
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 16cm;
+    height: 16cm;
+    padding: 124px 28px 28px;
+    background-color: #444444;
+    border-radius: 8%;
+    overflow: hidden;
+}
+
+.LoginForm:hover {
+    transform: translateY(-3%);
+    // scale: 1;
+    box-shadow: 1px 5px 10px #ffffff;
+}
+
+.LoginForm::before {
+    content: "";
+    position: absolute;
+    background: #7b7b7b;
+    width: 24cm;
+    height: 20cm;
+    top: -640px;
+    left: -20%;
+
+}
+
+// Logo
+.LoginForm_Logo {
+    position: absolute;
+    color: #ffffff;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 52px;
+    font-weight: initial;
+}
+
+.LoginForm_List {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// Form Item
+.LoginForm_Item {
+    display: block;
+    width: 460px;
+    height: 36px;
+    font-size: 24px;
+    padding: 16px;
+    margin: 32px 56px;
+    border-radius: 32px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.RegisterForm_Item {
+    display: block;
+    width: 460px;
+    height: 36px;
+    font-size: 24px;
+    padding: 16px;
+    margin: 16px 56px;
+    border-radius: 32px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+// Form Btn
+.Form_Btn {
+    display: block;
+    --height: 36px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+}
+
+.Form_Btn:active {
+    background-color: rgb(83, 157, 255);
+}
+
+.Btn-Login {
+    background-color: #0069BF;
+    color: #fff;
+}
+
+.google-icon {
+    font-size: 24px;
+    background: linear-gradient(90deg,
+            rgba(66, 133, 244, 1) 25%,
+            rgba(219, 68, 55, 1) 50%,
+            rgba(244, 180, 0, 1) 75%,
+            rgba(15, 157, 88, 1) 100%);
+    -webkit-background-clip: text;
+    /* Dùng màu nền cho chữ */
+    -webkit-text-fill-color: transparent;
+    /* Làm chữ trong suốt để hiện màu nền */
+}
+
+// LoginForm footer
+.LoginForm_Footer {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: initial;
+    text-align: center;
+}
+
+// Loginform icon
+.Bitcoin {
+    position: absolute;
+    line-height: 0;
+    right: 10%;
+    top: 44%;
+    animation: spin 8s linear infinite;
+}
+
+
+.Eth {
+    position: absolute;
+    line-height: 0;
+    bottom: 10%;
+    right: 16%;
+    animation: spin 2s linear infinite;
+}
+
+.Vnd {
+    position: absolute;
+    line-height: 0;
+    top: 10%;
+    right: 10%;
+    animation: -spin 4s linear infinite;
+}
+
+.Sui {
+    position: absolute;
+    line-height: 0;
+    bottom: 8%;
+    left: 16%;
+    animation: spin 4s linear infinite;
+}
+
+.Link {
+    position: absolute;
+    line-height: 0;
+    top: 28%;
+    left: 20%;
+    animation: -spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        /* Bắt đầu từ 0 độ */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Xoay đến 360 độ */
+    }
+}
+
+@keyframes -spin {
+    from {
+        transform: rotate(0deg);
+        /* Bắt đầu từ 0 độ */
+    }
+
+    to {
+        transform: rotate(-360deg);
+        /* Xoay đến 360 độ */
+    }
+}
